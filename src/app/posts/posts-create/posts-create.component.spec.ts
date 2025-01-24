@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormsModule } from '@angular/forms';
 import { PostsCreateComponent } from './posts-create.component';
 
 describe('PostsCreateComponent', () => {
@@ -8,9 +8,10 @@ describe('PostsCreateComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PostsCreateComponent]
+      declarations: [PostsCreateComponent],
+      imports: [FormsModule]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(PostsCreateComponent);
     component = fixture.componentInstance;
