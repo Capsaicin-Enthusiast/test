@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms'; 
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { PostsCreateComponent } from './posts/posts-create/posts-create.component';
+import { PostsCreateComponent } from './posts/posts-create/posts-create.component'; // Ensure this path is correct
 
 @NgModule({
   declarations: [
@@ -14,6 +14,6 @@ import { PostsCreateComponent } from './posts/posts-create/posts-create.componen
     FormsModule
   ],
   providers: [],
-  bootstrap: []
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./posts-create.component.css']
 })
 export class PostsCreateComponent {
-
   NewPost = '';
   PostInput = '';
 
