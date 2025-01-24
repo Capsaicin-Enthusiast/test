@@ -1,11 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-posts-create',
-  imports: [],
+  selector: 'posts-create',
   templateUrl: './posts-create.component.html',
-  styleUrl: './posts-create.component.css'
+  styleUrls: ['./posts-create.component.css']
 })
 export class PostsCreateComponent {
 
+  NewPost = '';
+  PostInput = '';
+
+  onAddPost() {
+    this.NewPost = this.PostInput;
+  }
 }

@@ -1,1 +1,7 @@
-<p>posts-create works!</p>
+<H1 for="title">Title</H1>
+<label for="content">Here</label>
+<textarea id="content" name="content" [value]="NewPost" [(ngModel)]="PostInput"></textarea>
+<hr>
+<button (click)="onAddPost()">Submit</button>
+<hr>
+<p>{{ NewPost }}</p>
